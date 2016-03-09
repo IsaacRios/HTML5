@@ -1,29 +1,43 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" ng-app="MyFirstApp">
 	<head>
 		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>		
+		<script src="controller/controller.js"></script>
 	</head>
-	<body>
+	<body ng-controller="FirstController">
+	{{"hola" + nombre}}
 		<div id="contenido">
 			<header>
 				<hgroup>
 					<h1>Encabezado</h1>		
 				</hgroup>
-				<nav>
+				<nav  class="gradiante">
 				<ul>
 					<li>Inicio</li>
 					<li>Tutoriales</li>
 					<li>Contacto</li>
 					<li>Media</li>
 				</ul>
-			</nav>	
+				</nav>	
 			</header>			
 			<section>
 			<div id="textoPr">
 				<article>
-					
-				</article>				
-			</div>				
+					<div>
+						<hgroup>
+						<h1>Título </h1>
+						</hgroup>					
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium aut inventore tempora molestias laborum repellendus adipisci ducimus eveniet dolorum dicta tempore quam ullam, eos, maiores expedita ea cupiditate temporibus aperiam!</p>
+
+					</div>		
+				</article>
+				<aside>
+					<p>visita nuestro canal de youtube <a href="">Youtube</a></p>
+					<p>Siguenos en Twitter <a href="">@Webmonster</a></p>
+				</aside>
+			</div>			
 			</section>
 			<footer>
 				
